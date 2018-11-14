@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/arquivo")
-public class ArquivoController {
+public class UploadController {
 
     @Autowired
     private ArquivoService arquivoService;

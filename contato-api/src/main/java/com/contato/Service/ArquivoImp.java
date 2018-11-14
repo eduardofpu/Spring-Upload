@@ -18,11 +18,11 @@ public class ArquivoImp implements ArquivoService{
     @Override
     public ArquivoRepresentation UploadArquivo(MultipartFile arquivo) {
 
-        Arquivo nomeArquivo = salvar(arquivo);
+        Arquivo dados = salvar(arquivo);
 
         ArquivoRepresentation params = ArquivoRepresentation.builder()
-                .id(nomeArquivo.getId())
-                .nomeFoto(nomeArquivo.getNomeFoto())
+                .id(dados.getId())
+                .nomeFoto(dados.getNomeFoto())
                 .build();
 
         return params;
