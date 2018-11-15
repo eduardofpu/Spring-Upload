@@ -12,11 +12,11 @@ import org.springframework.web.multipart.MultipartFile;
 public class UploadFotoController {
 
     @Autowired
-    private FotoService arquivoService;
+    private FotoService fotoService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
     ArquivoRepresentation UploadArquivo(@RequestParam MultipartFile foto) {
-        return arquivoService.UploadFoto(foto);
+        return fotoService.UploadFoto(foto);
     }
 }
