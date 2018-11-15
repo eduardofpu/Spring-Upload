@@ -19,7 +19,6 @@ public class Disco {
 	private String diretorioFotos;
 	
 	public void salvarFoto(MultipartFile foto) {
-
 		this.salvar(this.diretorioFotos, foto);
 	}
 	

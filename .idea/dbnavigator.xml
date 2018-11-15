@@ -25,13 +25,15 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="d6265ee3-6b88-4c1b-b6cb-0bdc788b208e">
-        <schema name="public" object-types="function, table, view" />
+        <schema name="public" object-types="function, sequence, table, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="d6265ee3-6b88-4c1b-b6cb-0bdc788b208e">
-      <console name="Connection" type="STANDARD"><![CDATA[select * FROM "public".arquivo;]]></console>
+      <console name="Connection" type="STANDARD"><![CDATA[select * FROM "public".arquivo;
+
+DELETE FROM "public".arquivo]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">

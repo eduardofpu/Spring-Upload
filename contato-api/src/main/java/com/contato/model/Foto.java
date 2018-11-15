@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Getter
 @Builder
-public class Arquivo {
+public class Foto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
