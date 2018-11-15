@@ -2,7 +2,7 @@
 
 
 ```sh
-O objetivo desse projeto demostrar como realizar upload e dowload de fotos,
+O objetivo desse projeto e demostrar como realizar upload e dowload de fotos,
 Ao realizar o dowload a extensão da foto e realizada de forma automatica.
 ```
 
@@ -33,12 +33,12 @@ Para testar os serviços utilize um browser ou o postman
 
 
 ## UPLOAD NA PASTA /tmp/contato-disco
-VEJA O ARQUEIVO: application.properties linha 25
+VEJA O ARQUIVO: application.properties linha 25
 
 O postman pode ser recomendado
-POST / 
+
 ```sh
-$ curl localhost:8080/fotos
+$ curl POST / localhost:8080/fotos
 key                         value
 foto        file            escolher arquivo
 
@@ -47,9 +47,9 @@ clique em send
 
 ## UPLOAD no banco de dados
 O postman pode ser recomendado
-POST / 
+
 ```sh
-$ curl localhost:8080/foto
+$ curl POST / localhost:8080/foto
 key                         value
 foto        file            escolher arquivo
 
@@ -57,10 +57,10 @@ clique em send
 ```
 
 ## DOWNLOAD do banco de dados
-GET / 
+
 ```sh
 
-$ curl localhost:8080/download
+$ curl GET / localhost:8080/download
 key                         value
 id                          1
 
